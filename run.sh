@@ -1,0 +1,1 @@
+docker run --runtime=nvidia -it --rm --shm-size=32g --ipc=host -p 8889:8889 -p 6006:6006 -v $(pwd):/home/kato/projects -w "/home/kato/projects" digit_recognizer:latest jupyter notebook --ip=0.0.0.0 --port=8889 --allow-root
